@@ -40,12 +40,38 @@
         <p class="compatibility">Built for Chromium-based browsers. Version 2.5.</p>
       </div>
 
-      <div class="hero-visual">
-        <div class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>youtube.com</span></div>
-        <picture>
-          <source srcset="/assets/continue-watching.png" media="(prefers-reduced-motion: reduce)">
-          <img src="/assets/continue-watching.webp" width="720" height="405" alt="Continue Watching offers to resume an unfinished video from 10 minutes and 15 seconds.">
-        </picture>
+      <div class="insight-preview">
+        <div class="preview-header">
+          <div>
+            <span class="preview-kicker">Your viewing overview</span>
+            <strong>Last 7 days</strong>
+          </div>
+          <span class="local-badge"><i aria-hidden="true"></i> Stored locally</span>
+        </div>
+
+        <div class="preview-metrics">
+          <div><span>Watch time</span><strong>9h 42m</strong></div>
+          <div><span>Videos</span><strong>12</strong></div>
+          <div><span>Shorts</span><strong>28</strong></div>
+        </div>
+
+        <div class="preview-chart">
+          <div class="chart-heading"><span>Watch time by day</span><strong>Videos + Shorts</strong></div>
+          <div class="bar-chart" aria-hidden="true">
+            <i><span>Mon</span></i>
+            <i><span>Tue</span></i>
+            <i><span>Wed</span></i>
+            <i><span>Thu</span></i>
+            <i><span>Fri</span></i>
+            <i><span>Sat</span></i>
+            <i><span>Sun</span></i>
+          </div>
+        </div>
+
+        <div class="preview-breakdown">
+          <div><span><i class="video-dot" aria-hidden="true"></i> Videos</span><strong>7h 18m</strong></div>
+          <div><span><i class="shorts-dot" aria-hidden="true"></i> Shorts</span><strong>2h 24m</strong></div>
+        </div>
       </div>
     </section>
 
@@ -63,9 +89,15 @@
       </div>
       <div class="feature-grid">
         <article class="feature-card feature-card-wide">
-          <span class="feature-icon" aria-hidden="true">↗</span>
-          <h3>Continue Watching</h3>
-          <p>Return to an eligible unfinished video from its saved position, or choose to start over.</p>
+          <picture class="feature-demo">
+            <source srcset="/assets/continue-watching.png" media="(prefers-reduced-motion: reduce)">
+            <img src="/assets/continue-watching.webp" width="720" height="405" loading="lazy" alt="Continue Watching offers to resume an unfinished video from 10 minutes and 15 seconds.">
+          </picture>
+          <div class="feature-card-copy">
+            <span class="feature-icon" aria-hidden="true">↗</span>
+            <h3>Continue Watching</h3>
+            <p>Return to an eligible unfinished video from its saved position, or choose to start over.</p>
+          </div>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">◷</span>
