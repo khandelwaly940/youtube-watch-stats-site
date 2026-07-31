@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — YouTube Watch Stats</title>
+  <meta name="description" content="How YouTube Watch Stats handles and stores viewing information.">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://ytstats.yashkhandelwal.me/privacy/">
+  <link rel="icon" href="/assets/logo.png">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/"><img src="/assets/logo.png" width="40" height="40" alt=""><span>YouTube Watch Stats</span></a>
+    <nav aria-label="Main navigation"><a href="/">Home</a><a href="/privacy/" aria-current="page">Privacy</a><a href="/support/">Support</a></nav>
+  </header>
+  <main>
+    <article class="document-shell">
+      <header class="document-header">
+        <p class="eyebrow">Your data, explained plainly</p>
+        <h1>Privacy Policy</h1>
+        <p class="lede">This policy explains what information YouTube Watch Stats handles, why it is needed, where it is stored, and the controls available to you.</p>
+        <p class="document-meta">Last updated: 31 July 2026 · Applies to version 2.5</p>
+      </header>
+      <div class="document-content">
+        <div class="notice"><strong>The short version</strong><p>Your viewing statistics are stored locally in your browser. Version 2.5 has no YouTube Watch Stats account, telemetry service, advertising provider, or developer-operated watch-history database.</p></div>
+
+        <h2>Information the extension handles</h2>
+        <p>To provide watch-time statistics, History, search, viewing frequency, and Continue Watching, the extension handles information from YouTube pages you use, including:</p>
+        <ul>
+          <li>YouTube video or Short identifiers and URLs</li>
+          <li>Video titles, channel names, channel URLs, and thumbnails when available</li>
+          <li>Playback state such as play, pause, seeking, playback speed, current position, and duration</li>
+          <li>Credited watch time, viewing dates, session timing, frequency, daily and lifetime totals, and eligible resume positions</li>
+          <li>Extension preferences, migration state, and locally generated technical identifiers used to prevent duplicate or conflicting records</li>
+        </ul>
+        <p>The extension does not read your general Chrome browsing-history database, YouTube account credentials, passwords, comments, private messages, payment information, health information, precise location, or form entries.</p>
+
+        <h2>How the information is used</h2>
+        <p>The information is used only to provide the extension’s user-facing functions:</p>
+        <ul>
+          <li>Calculate and display video and Shorts watch time</li>
+          <li>Build daily and lifetime statistics, charts, History, Top Videos, and Top Channels</li>
+          <li>Organize rewatches and dated viewing sessions</li>
+          <li>Search locally recorded viewing history</li>
+          <li>Offer Continue Watching for eligible unfinished regular videos</li>
+          <li>Export, validate, import, merge, overwrite, reset, delete, and recover locally stored data</li>
+          <li>Maintain reliability during YouTube navigation, tab closure, browser restarts, extension updates, and data migration</li>
+        </ul>
+        <p>The information is not used for advertising, profiling outside the extension’s purpose, credit decisions, or sale to another party.</p>
+
+        <h2>Local storage and retention</h2>
+        <p>Tracking data and preferences are stored locally in your browser using extension storage and IndexedDB. Data remains on the device and browser profile until you use the extension’s reset or deletion controls, overwrite it through import, remove the extension or browser profile, or the browser removes extension storage. Device capacity and browser behavior may affect local retention.</p>
+
+        <h2>Network requests and sharing</h2>
+        <p>YouTube Watch Stats does not send your stored watch history to the developer, an analytics provider, an advertising provider, or a data broker.</p>
+        <p>When the popup or Stats page displays a thumbnail, the browser requests the image from <code>img.youtube.com</code>; that request contains the relevant video identifier and is handled by YouTube or Google under their policies. When you open a recorded video, channel, or search result, your browser navigates to the corresponding YouTube page. The extension does not add a separate developer server to these requests.</p>
+        <p>The extension contains no remotely hosted executable code.</p>
+
+        <h2>Import and export</h2>
+        <p>Export creates a local JSON backup only when you request it. The file may contain viewing history, session data, totals, and extension preferences. It is not automatically uploaded anywhere. Anyone who obtains an exported file may be able to read its contents, so store and share it carefully.</p>
+        <p>Import reads only the JSON file you select. The extension validates the file before offering Merge or Overwrite. Imported data is processed locally and is not sent to the developer.</p>
+
+        <h2>Your controls</h2>
+        <p>You can disable Continue Watching, reset today’s activity, delete an individual content record, clear all tracking data, export a backup, and merge or overwrite data through import. Removing the extension removes its extension-owned local storage, subject to browser behavior.</p>
+
+        <h2>Permissions</h2>
+        <p>The extension requests access to local extension storage and YouTube pages so it can observe playback, save your statistics, recover tracking across supported browser lifecycle events, and display extension-owned interfaces. It does not request access to every website.</p>
+        <p>The <code>unlimitedStorage</code> permission allows the browser to retain a larger local watch-history database, subject to available device storage and browser controls. It does not provide cloud storage and does not remove your ability to delete data.</p>
+
+        <h2>Chrome Web Store Limited Use</h2>
+        <p>YouTube Watch Stats uses information received through Chrome and YouTube page access only to provide or improve its clearly described watch-time tracking and viewing-statistics purpose. Its use of this information complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+        <h2>Security</h2>
+        <p>The extension validates imported data, uses browser-managed extension storage, and performs tracking and data changes through serialized local operations designed to reduce corruption and duplication. No storage or software system can be guaranteed completely secure. Keep exported backups protected because they are readable JSON files under your control.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If the extension’s information practices change, this policy and the Chrome Web Store privacy disclosures will be updated. Material new practices will be disclosed as required before they take effect.</p>
+
+        <h2>Contact</h2>
+        <p>Questions or privacy requests can be sent to <a href="mailto:ytstats@extensions.yashkhandelwal.me">ytstats@extensions.yashkhandelwal.me</a>.</p>
+        <p>Publisher: Yash Khandelwal</p>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer"><div><a class="brand brand-small" href="/"><img src="/assets/logo.png" width="30" height="30" alt=""><span>YouTube Watch Stats</span></a><p>YouTube is a trademark of Google LLC. This extension is not affiliated with or endorsed by YouTube or Google.</p></div><nav aria-label="Footer navigation"><a href="/">Home</a><a href="/support/">Support</a><a href="mailto:ytstats@extensions.yashkhandelwal.me">Contact</a></nav></footer>
+</body>
+</html>
