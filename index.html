@@ -5,14 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YouTube Watch Stats — Private watch-time insights</title>
   <meta name="description" content="Track YouTube watch time, videos, Shorts, and history privately with local stats and Continue Watching.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0f172a">
   <meta property="og:title" content="YouTube Watch Stats">
   <meta property="og:description" content="Private, local insights into the time you spend on YouTube.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ytstats.yashkhandelwal.me/">
+  <meta property="og:image" content="https://ytstats.yashkhandelwal.me/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="YouTube Watch Stats viewing overview with watch time, videos, Shorts, and a seven-day chart.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://ytstats.yashkhandelwal.me/">
   <link rel="icon" href="/assets/logo.png">
+  <script src="/assets/theme.js"></script>
   <link rel="stylesheet" href="/assets/site.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "YouTube Watch Stats",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome and Chromium-based browsers",
+      "description": "Private, local insights into YouTube watch time, videos, Shorts, and viewing history.",
+      "softwareVersion": "2.5",
+      "url": "https://ytstats.yashkhandelwal.me/",
+      "downloadUrl": "https://chromewebstore.google.com/detail/youtube-watch-stats/njeffekcpmmllcaiofokpcgpadcckknj",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -20,11 +45,14 @@
       <img src="/assets/logo.png" width="40" height="40" alt="">
       <span>YouTube Watch Stats</span>
     </a>
-    <nav aria-label="Main navigation">
-      <a href="#features">Features</a>
-      <a href="/privacy/">Privacy</a>
-      <a href="/support/">Support</a>
-    </nav>
+    <div class="header-actions">
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/support/">Support</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Change color theme"></button>
+    </div>
   </header>
 
   <main>
