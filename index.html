@@ -68,38 +68,65 @@
         <p class="compatibility">Built for Chromium-based browsers. Version 2.5.</p>
       </div>
 
-      <div class="insight-preview">
-        <div class="preview-header">
-          <div>
-            <span class="preview-kicker">Your viewing overview</span>
-            <strong>Last 7 days</strong>
+      <div class="product-stage" role="img" aria-label="YouTube Watch Stats showing a 30-day viewing overview and today's activity">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="stats-window">
+          <div class="stage-toolbar">
+            <div class="stage-brand">
+              <img src="/assets/logo.png" width="34" height="34" alt="">
+              <div><span>Full Stats</span><strong>Your viewing overview</strong></div>
+            </div>
+            <span class="range-pill">Last 30 days <i aria-hidden="true">⌄</i></span>
           </div>
-          <span class="local-badge"><i aria-hidden="true"></i> Stored locally</span>
-        </div>
 
-        <div class="preview-metrics">
-          <div><span>Watch time</span><strong>9h 42m</strong></div>
-          <div><span>Videos</span><strong>12</strong></div>
-          <div><span>Shorts</span><strong>28</strong></div>
-        </div>
+          <div class="stage-metrics">
+            <div><span>Total videos</span><strong>35</strong><small>+8 this week</small></div>
+            <div><span>Total Shorts</span><strong>46</strong><small>+12 this week</small></div>
+            <div><span>Total time</span><strong>12h 24m</strong><small>Across all viewing</small></div>
+          </div>
 
-        <div class="preview-chart">
-          <div class="chart-heading"><span>Watch time by day</span><strong>Videos + Shorts</strong></div>
-          <div class="bar-chart" aria-hidden="true">
-            <i><span>Mon</span></i>
-            <i><span>Tue</span></i>
-            <i><span>Wed</span></i>
-            <i><span>Thu</span></i>
-            <i><span>Fri</span></i>
-            <i><span>Sat</span></i>
-            <i><span>Sun</span></i>
+          <div class="stage-chart">
+            <div class="stage-chart-heading">
+              <div><strong>Watch Time</strong><span>minutes</span></div>
+              <div class="chart-switch" aria-hidden="true"><i></i><i></i><i></i><b>⌁</b></div>
+            </div>
+            <svg viewBox="0 0 500 170" role="img" aria-label="Watch time rising and falling over seven days">
+              <defs>
+                <linearGradient id="stage-area-fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#2f6fed" stop-opacity=".2"/>
+                  <stop offset="1" stop-color="#2f6fed" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <g class="stage-grid" aria-hidden="true">
+                <path d="M18 28H484M18 78H484M18 128H484"/>
+              </g>
+              <path class="stage-area" d="M18 122 C53 114 74 96 102 100 S151 126 181 91 S230 52 260 74 S309 112 340 84 S389 36 421 54 S459 78 484 38 L484 145 L18 145 Z"/>
+              <path class="stage-line" pathLength="1" d="M18 122 C53 114 74 96 102 100 S151 126 181 91 S230 52 260 74 S309 112 340 84 S389 36 421 54 S459 78 484 38"/>
+              <g class="stage-points" aria-hidden="true">
+                <circle cx="18" cy="122" r="4"/><circle cx="102" cy="100" r="4"/><circle cx="181" cy="91" r="4"/><circle cx="260" cy="74" r="4"/><circle cx="340" cy="84" r="4"/><circle cx="421" cy="54" r="4"/><circle cx="484" cy="38" r="4"/>
+              </g>
+              <g class="stage-days" aria-hidden="true">
+                <text x="18" y="164">Mon</text><text x="96" y="164">Tue</text><text x="174" y="164">Wed</text><text x="252" y="164">Thu</text><text x="330" y="164">Fri</text><text x="408" y="164">Sat</text><text x="470" y="164">Sun</text>
+              </g>
+            </svg>
           </div>
         </div>
 
-        <div class="preview-breakdown">
-          <div><span><i class="video-dot" aria-hidden="true"></i> Videos</span><strong>7h 18m</strong></div>
-          <div><span><i class="shorts-dot" aria-hidden="true"></i> Shorts</span><strong>2h 24m</strong></div>
+        <div class="today-peek">
+          <div class="today-peek-header">
+            <div><img src="/assets/logo.png" width="28" height="28" alt=""><strong>Today</strong></div>
+            <span>Live</span>
+          </div>
+          <div class="today-peek-grid">
+            <div><span>Videos</span><strong>6</strong></div>
+            <div><span>Time</span><strong>1h 42m</strong></div>
+            <div><span>Shorts</span><strong>11</strong></div>
+            <div><span>Shorts time</span><strong>8m</strong></div>
+          </div>
+          <div class="today-peek-progress"><i aria-hidden="true"></i><span>Tracking stays on your device</span></div>
         </div>
+
+        <span class="private-chip"><i aria-hidden="true"></i> Local and private</span>
       </div>
     </section>
 
