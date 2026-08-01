@@ -8,19 +8,35 @@ Static public website for YouTube Watch Stats, deployed with GitHub Pages at `ht
 - `/privacy/` — Chrome Web Store privacy policy
 - `/support/` — support and troubleshooting
 
+## Repository structure
+
+```text
+index.html                  Landing page
+privacy/index.html          Public version 2.5 privacy policy
+support/index.html          Support and troubleshooting
+404.html                    Static not-found page
+assets/site.css             Shared responsive light/dark visual system
+assets/theme.js             Local-only theme preference
+assets/                     Logo, social image, and feature media
+robots.txt                  Search crawler policy
+sitemap.xml                 Canonical public routes
+CNAME                       GitHub Pages custom domain
+.nojekyll                   Direct static publishing
+```
+
 ## Local preview
 
 Serve the repository root with any static HTTP server. Root-relative links require an HTTP preview rather than opening the HTML files directly.
 
 ## Deployment
 
-GitHub Pages publishes the `main` branch from the repository root. The custom subdomain must use a DNS `CNAME` record pointing `ytstats` to the GitHub Pages hostname for the repository owner. Enforce HTTPS after DNS verification succeeds.
+GitHub Pages publishes the `main` branch from the repository root. The custom subdomain uses the committed `CNAME` and serves the public website independently from the extension repository.
 
 The site intentionally has no analytics, cookies, forms, backend, or third-party JavaScript.
 
-## HTTPS launch
+## HTTPS status
 
-Keep the `ytstats` CNAME in **DNS only** mode while GitHub Pages provisions its managed certificate. Once GitHub enables the repository's **Enforce HTTPS** control, turn it on and verify that HTTP redirects to HTTPS. A CDN proxy is not required for this static site and can prevent GitHub from validating the origin domain.
+Verified 1 August 2026: plain HTTP redirects permanently to HTTPS, and `/`, `/privacy/`, `/support/`, `/robots.txt`, and `/sitemap.xml` all return successful HTTPS responses without authentication.
 
 ## Search indexing launch
 
