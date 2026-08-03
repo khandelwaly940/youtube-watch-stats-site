@@ -5,6 +5,7 @@ Static public website for YouTube Watch Stats, deployed with GitHub Pages at `ht
 ## Routes
 
 - `/` — product landing page
+- `/whatsnew/` — current and archived extension release notes
 - `/privacy/` — Chrome Web Store privacy policy
 - `/support/` — support and troubleshooting
 
@@ -12,6 +13,7 @@ Static public website for YouTube Watch Stats, deployed with GitHub Pages at `ht
 
 ```text
 index.html                  Landing page
+whatsnew/index.html         Public release notes and archive
 privacy/index.html          Public version 2.5 privacy policy
 support/index.html          Support and troubleshooting
 404.html                    Static not-found page
@@ -36,7 +38,7 @@ The site intentionally has no analytics, cookies, forms, backend, or third-party
 
 ## HTTPS status
 
-Verified 1 August 2026: plain HTTP redirects permanently to HTTPS, and `/`, `/privacy/`, `/support/`, `/robots.txt`, and `/sitemap.xml` all return successful HTTPS responses without authentication.
+Verified 3 August 2026: plain HTTP redirects permanently to HTTPS, and `/`, `/whatsnew/`, `/privacy/`, `/support/`, `/robots.txt`, and `/sitemap.xml` all return successful HTTPS responses without authentication.
 
 ## Search indexing launch
 
@@ -46,7 +48,7 @@ Owner actions after HTTPS enforcement:
 
 1. Add or open the `yashkhandelwal.me` Domain property in Google Search Console and complete its DNS TXT verification.
 2. Submit `https://ytstats.yashkhandelwal.me/sitemap.xml` in the Sitemaps report.
-3. Use URL Inspection → Test live URL → Request indexing for `/`, `/privacy/`, and `/support/`.
+3. Use URL Inspection → Test live URL → Request indexing for `/`, `/whatsnew/`, `/privacy/`, and `/support/`.
 4. Put the website URL in the Chrome Web Store listing and retain the repository homepage link so the new site has authoritative inbound links.
 5. Optionally import the verified Search Console property into Bing Webmaster Tools and submit the same sitemap.
 6. Recheck coverage after at least one week; submission requests discovery but cannot guarantee ranking or immediate indexing.
